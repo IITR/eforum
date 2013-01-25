@@ -27,9 +27,9 @@
             </div>
             <div id="content2" class="row-fluid">
                 <div id="contactform" >
-                    <div id="form">
-                        <form action="http://getsimpleform.com/messages?form_api_token=bad768fbdc9361f518138a3c85e1a11e" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="redirect_to" value="file:///C:/Users/IMG-145/Desktop/index.html"></br>
+                    <div id="form" class="form">
+                        <form action="http://getsimpleform.com/messages?form_api_token=bad768fbdc9361f518138a3c85e1a11e" method="post" enctype="multipart/form-data" onsubmit="return checkCheckBox(this)">
+                            <input type="hidden" name="redirect_to" value="http:///axitkhurana.com/pitchfest/thankyou.html"></br>
                             <input name="venture_name" type="text" placeholder="Name of the Venture" class="input-xlarge"></br>
                             <input name="leader_name" type="text" placeholder="Team Leader's Name" class="input-xlarge"></br>
 							<input name="Phone_no" type="text" placeholder="Contact number" class="input-xlarge"></br>
@@ -46,7 +46,11 @@
 								<option value="Already_Founded">Already Founded</option>
 								<option value="Active_for_2 years">Active for more than 2 years</option>
 							</select></br>
-							<p class="text3"> Presentation : <input type='file' name='Presentation' /></p>
+							<p class="text3"> Presentation : <input type='file' name='Presentation' /></p></br>
+							<div class="div1">
+								<input type="checkbox" value="0" name="agree" class="checkbox1">
+								<p class="text12">I agree to terms and Conditions:</p></br>
+							</div>	
                             <div id="submit" class="row-fluid">
                                 <div class="offset3 span6">
                                     <input type="image" src="./Pitch Fest_files/send.png" alt="Send Message">
@@ -72,5 +76,16 @@
     
 
 	</body>
+	<SCRIPT language=JavaScript>
+		function checkCheckBox(f){
+		if (f.agree.checked == false )
+		{
+			alert('Please agree to terms and conditions first.');
+			return false;
+		}
+		else
+			return true;
+		}
+	</SCRIPT>
 	<style type="text/css"></style>
 </html>
