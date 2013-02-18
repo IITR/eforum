@@ -85,6 +85,7 @@
     color: #284b73;
     margin-top:20px;
 }
+
 .text1
 {
 	float:left;
@@ -100,7 +101,15 @@
 	margin-left: 17px;
 	margin-top: 20px;
 }
-
+.text{
+    padding: 20px;
+    font-size:20px;
+    line-height:30px;
+}
+.text_small{
+    padding: 10px;
+    font-size:18px;
+}
 .menuitem  a:hover
 {
 	color:#FF8F00;
@@ -1491,7 +1500,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 40px;
+  height: 30px;
   padding: 4px 6px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -2342,7 +2351,7 @@ legend + .control-group {
   box-shadow: none;
 }
 .btn-large {
-  padding: 11px 19px;
+  padding: 9px 19px;
   font-size: 17.5px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
