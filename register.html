@@ -36,7 +36,10 @@
                             <input type="hidden" name="redirect_to" value="http:///axitkhurana.com/pitchfest/thankyou.html"></br>
                             <input name="venture_name" type="text" placeholder="Name of the Venture" class="input-xlarge"></br>
                             <input name="leader_name" type="text" placeholder="Team Leader's Name" class="input-xlarge"></br>
+							<input name="email" type="email" placeholder="E-mail Address" class="input-xlarge" autocomplete="off"></br>
 							<input name="Phone_no" type="text" placeholder="Contact number" class="input-xlarge"></br>
+							<input name="Passout Year" type="text" placeholder="Passout Year" class="input-xlarge"></br>
+							<input name="Branch" type="text" placeholder="Branch" class="input-xlarge"></br>
 							<select name="affiliation" class="input-select">
 								<option value='' disabled selected style='display:none;'>Affiliation with Roorkee</option>
 								<option value="Current_Student">Currently studying</option>
@@ -53,7 +56,7 @@
 							<p class="text3"> Presentation : <input type='file' name='Presentation' /></p></br>
 							<div class="div1">
 								<input type="checkbox" value="0" name="agree" class="checkbox1">
-								<p class="text12">I agree to terms and Conditions:</p></br>
+								<p class="text12">I agree to these <a href="Pitch Fest_files/mutual.docx" >terms and Conditions</a></p></br>
 							</div>	
                             <div id="submit" class="row-fluid">
                                 <div class="offset3 span6">
@@ -94,13 +97,21 @@
 	</body>
 	<SCRIPT language=JavaScript>
 		function checkCheckBox(f){
-		if (f.agree.checked == false )
-		{
-			alert('Please agree to terms and conditions first.');
-			return false;
-		}
-		else
-			return true;
+			if (f.agree.checked == false )
+			{
+				alert('Please agree to terms and conditions first.');
+				return false;
+			}
+			else
+			{
+				if (f.Presentation.value==''||f.Presentation.value.length<4)
+				{
+					alert('Please attach a file');
+					return false;
+				}
+				else
+					return true;
+			}
 		}
 	</SCRIPT>
 	<style type="text/css"></style>
