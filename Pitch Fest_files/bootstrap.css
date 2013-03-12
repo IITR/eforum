@@ -12,7 +12,7 @@
     text-align:center;
 }
 #menu {
-    font-family: gauntlet_thinregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: colaboratelightregular;
     margin-top: 40px;
 	margin-left:30px;
 }
@@ -109,10 +109,7 @@
 .text_small{
     padding: 10px;
     font-size:18px;
-}
-.menuitem  a:hover
-{
-	color:#FF8F00;
+	text-align: justify;
 }
 .menuitem  a:active
 {
@@ -149,8 +146,9 @@
 }
 .text6
 {
-	font-family:Calibri;
-	font-size:14px;
+	font-family:colaboratelightregular;
+	font-size:17px;
+	text-align:justify;
 	padding-top: 20px;
 	border-top: 1px solid #999999;
 	margin-top: 22px;
@@ -263,7 +261,7 @@
 {
 	font-family: sans-serif;
 	font-size: 25px;
-	color: rgb(59, 211, 180);
+	color: #339bff;
 	margin-top: 170px;
 	margin-left: 440px;
 }
@@ -272,6 +270,20 @@
 	height:300px;
 	
 }
+.item-list
+{
+	margin-left:-70px;
+}
+.social
+{
+	margin-top:-15px;
+}
+.desc
+{
+	font-family: 'colaboratelightregular';
+	text-align:justify;
+}
+
 /*.submit1
 {
 	background: #d2ff52; 
@@ -494,7 +506,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Times New Roman", serif;
+  font-family: 'colaboratelightregular';
   font-size: 16px;
   line-height: 20px;
   color: #333333;
@@ -503,9 +515,6 @@ body {
 a {
   color: #000000;
   text-decoration: none;
-}
-a:hover {
-  color: #284B73;
 }
 .img-rounded {
   -webkit-border-radius: 6px;

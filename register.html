@@ -3,37 +3,47 @@
 	<head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>IITR Enterprise Forum</title>
         <link rel="stylesheet" type="text/css" href="./Pitch Fest_files/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./Pitch Fest_files/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="./Pitch Fest_files/style.css">
         <link rel="icon" href="./Pitch Fest_files/favicon.png">
     </head>
     <body>
         <div class="container">
-            <div id="header" class="row-fluid">
+           <div id="header" class="row-fluid">
                 <div id="logo" class="span4">
                     <a href="./index.html">
                         <img src="./Pitch Fest_files/Pitch-Fest-1.png" alt="Pitch Fest">
                     </a>
                 </div>
                 <div id="menu" class="span8">
-                    <div class="row-fluid">
+                    <div class="row-fluid item-list">
                         <ul class="unstyled">
-                            <li class="span2 menuitem"><a href="index.html" >Home</a></li>
+                            <li class="span2 menuitem"><a href="index.html" class="active">Home</a></li>
                             <li class="span2 menuitem"><a href="judges.html">Judges</a></li>
-                            <li class="span2 menuitem"><a href="register.html" class="active">Register</a></li>
+                            <li class="span2 menuitem"><a href="register.html">Register</a></li>
 							<li class="span2 menuitem"><a href="participation.html">Participation Protocol</a></li>
                             <li class="span2 menuitem"><a href="contact.html">Contact us</a></li>
+							<li class="span2 menuitem social">
+								<a href="https://www.facebook.com/abcd">
+									<img src="./Pitch Fest_files/facebook.png" alt="facebook">
+								</a>
+								<a href="https://twitter.com/abcd">
+									<img src="./Pitch Fest_files/twitter.png" alt="twitter">
+								</a>	
+							</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div id="content2" class="row-fluid">
 				<div class="row-fluid heading1">
-					<p>Registeration Form:</p>
+					<p>Registeration Form</p>
 				</div>
  
                 <div id="contactform" >
                     <div id="form" class="form">
                         <form action="http://getsimpleform.com/messages?form_api_token=bad768fbdc9361f518138a3c85e1a11e" method="post" enctype="multipart/form-data" onsubmit="return checkCheckBox(this)">
-                            <input type="hidden" name="redirect_to" value="http:///iit-roorkee.org/enterpriseforum/thankyou.html"></br>
+                            <input type="hidden" name="redirect_to" value="http:///axitkhurana.com/pitchfest/thankyou.html"></br>
                             <input name="venture_name" type="text" placeholder="Name of the Venture" class="input-xlarge"></br>
                             <input name="leader_name" type="text" placeholder="Team Leader's Name" class="input-xlarge"></br>
 							<input name="email" type="email" placeholder="E-mail Address" class="input-xlarge" autocomplete="off"></br>
@@ -53,14 +63,15 @@
 								<option value="Already_Founded">Already Founded</option>
 								<option value="Active_for_2 years">Active for more than 2 years</option>
 							</select></br>
-							<p class="text3"> Presentation : <input type='file' name='Presentation' /></p></br>
+							<p class="text3 text_3"> Presentation : <input type='file' name='Presentation' /></p></br>
 							<div class="div1">
 								<input type="checkbox" value="0" name="agree" class="checkbox1">
-								<p class="text12">I agree to these <a href="Pitch Fest_files/mutual.docx" >terms and Conditions</a></p></br>
+								<p class="text12">I agree to these <a href="Pitch Fest_files/mutual.docx" >Terms and Conditions</a></p></br>
 							</div>	
                             <div id="submit" class="row-fluid">
                                 <div class="offset3 span6">
-                                    <input type="image" src="./Pitch Fest_files/send.png" alt="Send Message">
+                                    <!--<input type="image" src="./Pitch Fest_files/send.png" alt="Send Message">-->
+									<input class="submit_button" type="submit" value='Submit'>
                                 </div>
                             </div>
                         </form>
@@ -73,25 +84,14 @@
 <br />
 <form action="http://shikshasankalp.us2.list-manage.com/subscribe/post?u=10e29f8b9a6698c725b9f51ea&amp;id=e429861dce" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
     <label for="mce-EMAIL" class="text">Stay informed about the IIT Roorkee Enterprise Forum:</label>
-    <input type="email" value="" name="EMAIL" class="input-large email" id="mce-EMAIL" placeholder="email address" required>
-    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large">
+    <input type="email" value="" name="EMAIL" class="input-medium email" id="mce-EMAIL" placeholder="email address" required>
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-medium">
 </form>
 </div>
 
 <!--End mc_embed_signup-->
         </div>
-        <div id="footer" class="row-fluid">
-            <div class="container">
-                <div class="row-fluid" id="social">
-                    <a href="https://www.facebook.com/abcd">
-                        <img src="./Pitch Fest_files/facebook.png" alt="facebook">
-                    </a>
-                    <a href="https://twitter.com/abcd">
-                        <img src="./Pitch Fest_files/twitter.png" alt="twitter">
-                    </a>
-                </div>
-            </div>
-        </div>
+        
     
 
 	</body>
