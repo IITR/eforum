@@ -27,6 +27,9 @@
 .selected .text {
     color: #284b73;
 }
+.span5 .image{
+    text-align:center;
+}
 #content {
     margin-top:40px;
 }
